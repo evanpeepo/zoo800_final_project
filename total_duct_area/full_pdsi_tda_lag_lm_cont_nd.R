@@ -5,8 +5,8 @@ library(car)
 
 # Load data ---------------------------------------------------------------
 
-pdsi <- read.csv('Data/Processed/socorro_co_pdsi_1989to2025.csv')
-duct_metrics <- read.csv('Data/Processed/complete_data_12.1.25.csv')
+pdsi <- read.csv('socorro_co_pdsi_1989to2025.csv')
+duct_metrics <- read.csv('complete_data_12.1.25.csv')
 duct_metrics_1990to2019 <- duct_metrics %>% #these are trees just exposed to ambient conditions
   filter(year < 2020) %>% 
   filter(group != 'legacy')

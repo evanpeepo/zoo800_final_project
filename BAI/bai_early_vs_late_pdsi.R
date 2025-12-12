@@ -7,7 +7,7 @@ library(effects)
 
 # Load data ---------------------------------------------------------------
 
-duct_metrics <- read.csv('Data/Processed/complete_data_12.1.25.csv')
+duct_metrics <- read.csv('complete_data_12.1.25.csv')
 
 duct_metrics_1990to2019 <- duct_metrics %>% #these are trees just exposed to ambient conditions
   filter(year < 2020) %>% 
